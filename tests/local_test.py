@@ -3,7 +3,7 @@ from models.state_management import EmotionState, ConversationHistory
 from models.text_generation import TextGenerator
 
 def main():
-    key = "AIzaSyCsas4FZb-kFf8IIBVMtCbvEguClTP0ktw"
+    key = "API-KEY"
     Name = "EmotionGPT"
     # Initialize modules
     emotion_detector = EmotionDetection(
