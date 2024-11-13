@@ -9,7 +9,7 @@ class TestServerTimeComplexity(unittest.TestCase):
     def setUp(self, api_key=None):
         # Set up the test client for the Flask app
         self.client = app.test_client()
-        self.api_key = api_key if api_key else "AIzaSyCsas4FZb-kFf8IIBVMtCbvEguClTP0ktw"
+        self.api_key = api_key
 
     def _create_session(self):
         payload = {
