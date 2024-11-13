@@ -1,6 +1,6 @@
 const apiUrl = "http://127.0.0.1:5000";
 let sessionId = "";
-let apiKey = "AIzaSyCsas4FZb-kFf8IIBVMtCbvEguClTP0ktw"; // Replace with a valid API key
+let apiKey = "API-KEY"; // Replace with a valid API key
 let history = [];
 
 // Emotion-to-emoji mapping
