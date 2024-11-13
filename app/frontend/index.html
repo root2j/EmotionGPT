@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmotionGPT Chat Interface</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Configuration Form -->
+      <div class="config-form">
+        <h3>Configure EmotionBot</h3>
+        <label for="botName">Bot Name:</label>
+        <input type="text" id="botName" value="EmotionBot" />
+
+        <label for="personality">Personality:</label>
+        <input type="text" id="personality" value="friendly" />
+
+        <label for="model">Model:</label>
+        <input type="text" id="model" value="gemini" />
+
+        <button onclick="createSession()">Start Session</button>
+      </div>
+
+      <div class="chat-interface">
+        <!-- Emoji Display -->
+        <div id="emojiDisplay" class="emoji-display">😐</div>
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+          <div class="chat-header">
+            <h2>EmotionGPT Chat</h2>
+            <button id="endSessionBtn" onclick="endSession()">
+              End Session
+            </button>
+          </div>
+          <div id="chatWindow" class="chat-window"></div>
+          <div class="chat-input">
+            <input
+              type="text"
+              id="userMessage"
+              placeholder="Type your message..."
+              onkeydown="if (event.key === 'Enter') sendMessage()"
+            />
+            <button onclick="sendMessage()">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

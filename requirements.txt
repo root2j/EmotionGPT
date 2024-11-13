@@ -1,0 +1,4 @@
+Flask
+jsonlib-python3
+Flask-Routes
+uuid
