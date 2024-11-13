@@ -5,7 +5,7 @@ class TestTextGeneration(unittest.TestCase):
 
     def setUp(self):
         # Initialize the TextGenerator with a dummy API key
-        self.text_generator = TextGenerator(api_key='AIzaSyCsas4FZb-kFf8IIBVMtCbvEguClTP0ktw')
+        self.text_generator = TextGenerator(api_key='API-KEY')
 
     def test_generate_response(self):
         emotion_state = "sad"
