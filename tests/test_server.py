@@ -9,7 +9,7 @@ class TestServer(unittest.TestCase):
         # Set up the test client for the Flask app
         self.client = app.test_client()
         self.base_url = 'http://127.0.0.1:5000'
-        self.api_key = api_key if api_key else "AIzaSyCsas4FZb-kFf8IIBVMtCbvEguClTP0ktw"
+        self.api_key = api_key
 
     def test_create_session_success(self):
         """Test creating a session with all required fields."""
