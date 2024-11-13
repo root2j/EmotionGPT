@@ -1,7 +1,7 @@
 from models.emotion_detection import EmotionDetection
 
 # Replace 'YOUR_API_KEY' with your actual Gemini API key
-emotion_detector = EmotionDetection(api_key='AIzaSyCsas4FZb-kFf8IIBVMtCbvEguClTP0ktw')
+emotion_detector = EmotionDetection(api_key='API-KEY')
 
 # Basic emotion detection using keywords
 emotion = emotion_detector.detect_emotion("I'm feeling joyful!")
